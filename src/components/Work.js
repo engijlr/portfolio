@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 import Img1 from "../assets/portfolio-img1.png";
-import Img2 from "../assets/portfolio-img2.png";
-import Img3 from "../assets/portfolio-img3.png";
+import Img2 from "../assets/project1.png";
+import Img3 from "../assets/project2.png";
 
 const Work = () => {
   return (
@@ -22,12 +22,12 @@ const Work = () => {
               <h2 className="h2 leading-tight text-accent">
                 My Latest <br /> Work.
               </h2>
-              <p className="max-w-sm mb-16">
+              <p className="max-w-sm">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Aeneanaliquet dui eros, sit amet tempus arcu egestas eget.
                 Pellentesqueante
               </p>
-              <button className="btn btn-sm">View all projects</button>
+              <button className="btn btn-sm mt-[4px]">View all projects</button>
             </div>
             {/*image */}
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
@@ -36,7 +36,7 @@ const Work = () => {
               {/*img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500"
-                src={Img1}
+                src={Img2}
                 alt="image1"
               />
               {/*pretitle */}

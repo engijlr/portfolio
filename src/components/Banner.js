@@ -34,7 +34,7 @@ const Banner = () => {
             >
               <span className="text-white mr-4">I am a</span>
               <TypeAnimation
-                sequence={["Web", 3000, "Web Developer", 3000]}
+                sequence={["Front-end", 3000, "Developer", 3000]}
                 speed={50}
                 className="text-accent"
                 wrapper="span"
@@ -48,9 +48,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              aliquet dui eros, sit amet tempus arcu egestas eget. Pellentesque
-              ante.
+              With experience in JavaScript, and frameworks like React and
+              Node.js. I'm a quick learner and like to colaborate closely with a
+              team work to create efficient, scalable, and user-friendly
+              solutions that solve real-world problems.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
