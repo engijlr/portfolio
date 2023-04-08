@@ -85,6 +85,7 @@ const About = () => {
                         {icons.map((icon, i) => {
                           return (
                             <a
+                              key={i}
                               href="#"
                               className="btn w-9 h-9 my-2 mx-2 flex justify-center items-center"
                             >
