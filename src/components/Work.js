@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
-import Img1 from "../assets/project1.png";
 import Img2 from "../assets/project2.png";
 import Img3 from "../assets/project3.png";
 import Img4 from "../assets/project4.png";
@@ -19,14 +18,14 @@ const Work = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-10 mb-10 lg:mb-0"
+            className="flex gap-y-10 mb-10 lg:mb-0"
           >
             {/*text */}
             <div>
               <h2 className="h2 leading-tight text-accent">
                 My Latest <br /> Work.
               </h2>
-              <p className="max-w-sm mb-2">
+              <p className="max-w-sm mb-4">
                 My portfolio showcases a collection of projects I have
                 completed, each with its unique set of challenges and solutions.
                 I have experience in a variety of programming languages and
@@ -34,26 +33,11 @@ const Work = () => {
                 technology and my ability to solve complex problems through
                 innovative solutions.
               </p>
-              <button className="btn btn-sm">View all projects</button>
-            </div>
-            {/*image */}
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              {/*overlay */}
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-              {/*img */}
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Img1}
-                alt="image1"
-              />
-              {/*pretitle */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
-              {/*title */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
-              </div>
+              <button className="btn btn-sm">
+                <a href="https://github.com/engijlr?tab=repositories">
+                  See all my projects
+                </a>
+              </button>
             </div>
           </motion.div>
           <motion.div
@@ -73,13 +57,15 @@ const Work = () => {
                 src={Img2}
                 alt="image2"
               />
-              {/*pretitle */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
+
               {/*title */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+              <div className="absolute -bottom-full left-6 group-hover:bottom-4 transition-all duration-700 z-50">
+                <a
+                  href="https://el-spotify-clone.netlify.app"
+                  className="text-xl text-gradient"
+                >
+                  Spotify Clone
+                </a>
               </div>
             </div>
             {/*image */}
@@ -93,12 +79,17 @@ const Work = () => {
                 alt="image3"
               />
               {/*pretitle */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+              <div className="absolute -bottom-full left-10 group-hover:bottom-14 transition-all duration-500 z-50">
+                <span className="text-gradient">React App</span>
               </div>
               {/*title */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+              <div className="absolute -bottom-full left-10 group-hover:bottom-4 transition-all duration-700 z-50">
+                <a
+                  href="https://radiant-daifuku-4271a6.netlify.app"
+                  className="text-3xl text-white"
+                >
+                  Youtube Clone
+                </a>
               </div>
             </div>
             {/*image */}
@@ -112,12 +103,17 @@ const Work = () => {
                 alt="image4"
               />
               {/*pretitle */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+              <div className="absolute -bottom-full left-10 group-hover:bottom-14 transition-all duration-500 z-50">
+                <span className="text-gradient">Web App</span>
               </div>
               {/*title */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+              <div className="absolute -bottom-full left-10 group-hover:bottom-4 transition-all duration-700 z-50">
+                <a
+                  href="https://yelpcamp-2csv.onrender.com/"
+                  className="text-3xl text-white"
+                >
+                  Yelpcamp
+                </a>
               </div>
             </div>
           </motion.div>
@@ -139,12 +135,17 @@ const Work = () => {
                 alt="image5"
               />
               {/*pretitle */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+              <div className="absolute -bottom-full left-10 group-hover:bottom-14 transition-all duration-500 z-50">
                 <span className="text-gradient">UI/UX Design</span>
               </div>
               {/*title */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+              <div className="absolute -bottom-full left-10 group-hover:bottom-4 transition-all duration-700 z-50">
+                <a
+                  href="https://cheerful-cucurucho-45fd9b.netlify.app"
+                  className="text-3xl text-white"
+                >
+                  Todo List
+                </a>
               </div>
             </div>
             {/*image */}
@@ -158,12 +159,17 @@ const Work = () => {
                 alt="image6"
               />
               {/*pretitle */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+              <div className="absolute -bottom-full left-10 group-hover:bottom-14 transition-all duration-500 z-50">
                 <span className="text-gradient">UI/UX Design</span>
               </div>
               {/*title */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+              <div className="absolute -bottom-full left-10 group-hover:bottom-4 transition-all duration-700 z-50">
+                <a
+                  href="https://playful-druid-aff7d2.netlify.app"
+                  className="text-2xl text-white"
+                >
+                  Calories Tracker
+                </a>
               </div>
             </div>
             {/*image */}
@@ -177,12 +183,17 @@ const Work = () => {
                 alt="image7"
               />
               {/*pretitle */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+              <div className="absolute -bottom-full left-10 group-hover:bottom-14 transition-all duration-500 z-50">
                 <span className="text-gradient">UI/UX Design</span>
               </div>
               {/*title */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
+              <div className="absolute -bottom-full left-10 group-hover:bottom-4 transition-all duration-700 z-50">
+                <a
+                  href="https://engijlr.github.io/movie-app/"
+                  className="text-3xl text-white"
+                >
+                  Movie App
+                </a>
               </div>
             </div>
           </motion.div>

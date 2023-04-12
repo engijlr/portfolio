@@ -55,7 +55,11 @@ const About = () => {
               in front-end, but also with certain knowledge in back-end and
               database.
             </h3>
-            <button className="btn btn-sm">See my work</button>
+            <button className="btn btn-sm">
+              <a href="https://github.com/engijlr?tab=repositories">
+                See my work
+              </a>
+            </button>
           </motion.div>
           {/*services */}
           <motion.div
@@ -84,13 +88,12 @@ const About = () => {
                       <div className="flex flex-row">
                         {icons.map((icon, i) => {
                           return (
-                            <a
+                            <button
                               key={i}
-                              href="#"
                               className="btn w-9 h-9 my-2 mx-2 flex justify-center items-center"
                             >
                               {icon}
-                            </a>
+                            </button>
                           );
                         })}
                       </div>
