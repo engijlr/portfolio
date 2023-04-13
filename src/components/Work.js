@@ -30,8 +30,8 @@ const Work = () => {
                 completed, each with its unique set of challenges and solutions.
                 I have experience in a variety of programming languages and
                 platforms. Overall, my projects demonstrate my passion for
-                technology and my ability to solve complex problems through
-                innovative solutions.
+                technology and and they are just a small sample of what I can
+                build when solving complex problems.
               </p>
               <button className="btn btn-sm">
                 <a href="https://github.com/engijlr?tab=repositories">
@@ -57,7 +57,15 @@ const Work = () => {
                 src={Img2}
                 alt="image2"
               />
-
+              {/*pretitle */}
+              <div className="absolute -bottom-full left-6 group-hover:bottom-12 transition-all duration-500 z-50">
+                <a
+                  href="https://github.com/engijlr/spotify-clone"
+                  className="text-white"
+                >
+                  See code
+                </a>
+              </div>
               {/*title */}
               <div className="absolute -bottom-full left-6 group-hover:bottom-4 transition-all duration-700 z-50">
                 <a
@@ -79,14 +87,19 @@ const Work = () => {
                 alt="image3"
               />
               {/*pretitle */}
-              <div className="absolute -bottom-full left-10 group-hover:bottom-14 transition-all duration-500 z-50">
-                <span className="text-gradient">React App</span>
+              <div className="absolute -bottom-full left-6 group-hover:bottom-12 transition-all duration-500 z-50">
+                <a
+                  href="https://github.com/engijlr/youtube-clone-react"
+                  className="text-white"
+                >
+                  See code
+                </a>
               </div>
               {/*title */}
-              <div className="absolute -bottom-full left-10 group-hover:bottom-4 transition-all duration-700 z-50">
+              <div className="absolute -bottom-full left-6 group-hover:bottom-4 transition-all duration-700 z-50">
                 <a
                   href="https://radiant-daifuku-4271a6.netlify.app"
-                  className="text-3xl text-white"
+                  className="text-xl text-gradient"
                 >
                   Youtube Clone
                 </a>
@@ -103,14 +116,19 @@ const Work = () => {
                 alt="image4"
               />
               {/*pretitle */}
-              <div className="absolute -bottom-full left-10 group-hover:bottom-14 transition-all duration-500 z-50">
-                <span className="text-gradient">Web App</span>
+              <div className="absolute -bottom-full left-6 group-hover:bottom-12 transition-all duration-500 z-50">
+                <a
+                  href="https://github.com/engijlr/yelpcamp"
+                  className="text-white"
+                >
+                  See code
+                </a>
               </div>
               {/*title */}
-              <div className="absolute -bottom-full left-10 group-hover:bottom-4 transition-all duration-700 z-50">
+              <div className="absolute -bottom-full left-6 group-hover:bottom-4 transition-all duration-700 z-50">
                 <a
                   href="https://yelpcamp-2csv.onrender.com/"
-                  className="text-3xl text-white"
+                  className="text-xl text-gradient"
                 >
                   Yelpcamp
                 </a>
@@ -135,14 +153,19 @@ const Work = () => {
                 alt="image5"
               />
               {/*pretitle */}
-              <div className="absolute -bottom-full left-10 group-hover:bottom-14 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+              <div className="absolute -bottom-full left-6 group-hover:bottom-12 transition-all duration-500 z-50">
+                <a
+                  href="https://github.com/engijlr/todolist-react"
+                  className="text-white"
+                >
+                  See code
+                </a>
               </div>
               {/*title */}
-              <div className="absolute -bottom-full left-10 group-hover:bottom-4 transition-all duration-700 z-50">
+              <div className="absolute -bottom-full left-6 group-hover:bottom-4 transition-all duration-700 z-50">
                 <a
                   href="https://cheerful-cucurucho-45fd9b.netlify.app"
-                  className="text-3xl text-white"
+                  className="text-xl text-gradient"
                 >
                   Todo List
                 </a>
@@ -159,14 +182,19 @@ const Work = () => {
                 alt="image6"
               />
               {/*pretitle */}
-              <div className="absolute -bottom-full left-10 group-hover:bottom-14 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+              <div className="absolute -bottom-full left-6 group-hover:bottom-12 transition-all duration-500 z-50">
+                <a
+                  href="https://github.com/engijlr/calories-tracker"
+                  className="text-white"
+                >
+                  See code
+                </a>
               </div>
               {/*title */}
-              <div className="absolute -bottom-full left-10 group-hover:bottom-4 transition-all duration-700 z-50">
+              <div className="absolute -bottom-full left-6 group-hover:bottom-4 transition-all duration-700 z-50">
                 <a
                   href="https://playful-druid-aff7d2.netlify.app"
-                  className="text-2xl text-white"
+                  className="text-xl text-gradient"
                 >
                   Calories Tracker
                 </a>
@@ -183,14 +211,19 @@ const Work = () => {
                 alt="image7"
               />
               {/*pretitle */}
-              <div className="absolute -bottom-full left-10 group-hover:bottom-14 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+              <div className="absolute -bottom-full left-6 group-hover:bottom-12 transition-all duration-500 z-50">
+                <a
+                  href="https://github.com/engijlr/movie-app"
+                  className="text-white"
+                >
+                  See code
+                </a>
               </div>
               {/*title */}
-              <div className="absolute -bottom-full left-10 group-hover:bottom-4 transition-all duration-700 z-50">
+              <div className="absolute -bottom-full left-6 group-hover:bottom-4 transition-all duration-700 z-50">
                 <a
                   href="https://engijlr.github.io/movie-app/"
-                  className="text-3xl text-white"
+                  className="text-xl text-gradient"
                 >
                   Movie App
                 </a>

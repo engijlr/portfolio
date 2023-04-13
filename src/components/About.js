@@ -1,5 +1,4 @@
 import React from "react";
-import { BsArrowUpRight } from "react-icons/bs";
 import {
   FaHtml5,
   FaCss3,

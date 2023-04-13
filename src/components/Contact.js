@@ -1,24 +1,41 @@
-import { useState } from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Contact = () => {
-  const formInitialDetails = {
-    name: "",
-    email: "",
-    message: "",
+  const form = useRef();
+  const [btnText, setBtnText] = useState("Send Message");
+  const [messageSent, setMessageSent] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setBtnText("Sending....");
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("Message sent");
+          e.target.reset();
+          setMessageSent(true);
+          setBtnText("Send Message");
+          setTimeout(() => {
+            setMessageSent(false);
+          }, "5000");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
-
-  const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState("Send Message");
-  const [status, setStatus] = useState({});
-
-  const onFormUpdate = (category, value) => {
-    setFormDetails({ ...formDetails, [category]: value });
-  };
-
-  const handleSubmit = (e) => {};
 
   return (
     <section className="py-16 lg:section" id="contact">
@@ -47,40 +64,40 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            onSubmit={handleSubmit}
+            ref={form}
+            onSubmit={sendEmail}
             className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
           >
             <input
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               type="text"
-              value={formDetails.name}
+              name="name"
               placeholder="Your name"
-              onChange={(e) => onFormUpdate("name", e.target.value)}
+              required
             />
             <input
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               type="email"
-              value={formDetails.email}
+              name="email"
               placeholder="Your email"
-              onChange={(e) => onFormUpdate("email", e.target.value)}
+              required
             />
             <textarea
               className="bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
-              value={formDetails.message}
+              name="message"
               placeholder="Your message"
-              onChange={(e) => onFormUpdate("message", e.target.value)}
+              required
             ></textarea>
             <button type="submit" className="btn btn-lg">
-              {buttonText}
+              {btnText}
             </button>
-            {status.message && (
-              <p
-                className={
-                  status.success === false ? "text-red-600" : "text-green-600"
-                }
+            {messageSent && (
+              <div
+                className="p-4 mb-4 text-md  bg-transparent text-green-400"
+                role="alert"
               >
-                {status.message}
-              </p>
+                <span className="font-medium">Your message has been sent!</span>
+              </div>
             )}
           </motion.form>
         </div>

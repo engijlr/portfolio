@@ -35,11 +35,11 @@ const Banner = () => {
             >
               <span className="text-white mr-4">I am a</span>
               <TypeAnimation
-                sequence={["Front-end", 3000, "Developer", 3000]}
-                speed={50}
+                sequence={["Front-end Developer", 2000]}
+                speed={1}
                 className="text-accent"
                 wrapper="span"
-                repeat={Infinity}
+                repeat={0}
               />
             </motion.div>
             <motion.p
@@ -93,7 +93,7 @@ const Banner = () => {
             whileInView={"show"}
             className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
           >
-            <img src={Image} />
+            <img src={Image} alt="Banner" />
           </motion.div>
         </div>
       </div>
