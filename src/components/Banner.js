@@ -35,11 +35,16 @@ const Banner = () => {
             >
               <span className="text-white mr-4">I am a</span>
               <TypeAnimation
-                sequence={["Front-end Developer", 2000]}
+                sequence={[
+                  "Front-end-Developer",
+                  2000,
+                  "Front end Developer",
+                  2000,
+                ]}
                 speed={1}
                 className="text-accent"
                 wrapper="span"
-                repeat={0}
+                repeat={Infinity}
               />
             </motion.div>
             <motion.p
@@ -49,10 +54,12 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              With experience in JavaScript, and frameworks like React and
-              Node.js. I'm a quick learner and like to colaborate closely with a
-              team work to create efficient, scalable, and user-friendly
-              solutions that solve real-world problems.
+              Who love the challenge of taking complex problems and breaking
+              them down into smaller, more manageable pieces that can be solve
+              with code. I also love the freedom that programming offers in
+              terms of creativity. I am a good team player and fast learner who
+              will try always to find the most elegant and efficient solution
+              for any problem.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}

@@ -50,9 +50,12 @@ const About = () => {
           >
             <h2 className="h2 text-accent mb-6">What I Do.</h2>
             <h3 className="h3 max-w-[455px] mb-16">
-              I have worked with several technologies, taking special dedication
-              in front-end, but also with certain knowledge in back-end and
-              database.
+              There's a sense of endless possibility when it comes to
+              programming; with just a few lines of code, I can create something
+              new and exciting that didn't exist before. I love the way that it
+              challenges me to think creatively and logically, and the
+              satisfaction that comes with finding elegant solutions to complex
+              problems.
             </h3>
             <button className="btn btn-sm">
               <a href="https://github.com/engijlr?tab=repositories">
