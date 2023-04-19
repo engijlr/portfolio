@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
-import Img2 from "../assets/project2.png";
-import Img3 from "../assets/project3.png";
-import Img4 from "../assets/project4.png";
-import Img5 from "../assets/project5.png";
-import Img6 from "../assets/project6.png";
-import Img7 from "../assets/project7.png";
+import Img1 from "../assets/spotify-clone.png";
+import Img2 from "../assets/youtube.png";
+import Img3 from "../assets/todo-list.png";
+import Img4 from "../assets/yelpcamp.png";
+import Img5 from "../assets/movie-app.png";
+import Img6 from "../assets/calories-tracker.png";
 
 const Work = () => {
   return (
@@ -17,7 +17,7 @@ const Work = () => {
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="flex gap-y-10 mb-10 lg:mb-0"
           >
             {/*text */}
@@ -30,8 +30,8 @@ const Work = () => {
                 completed, each with its unique set of challenges and solutions.
                 I have experience in a variety of programming languages and
                 platforms. Overall, my projects demonstrate my passion for
-                technology and and they are just a small sample of what I can
-                build when solving complex problems.
+                technology and they are just a small sample of what I can build
+                when solving complex problems.
               </p>
               <button className="btn btn-sm">
                 <a href="https://github.com/engijlr?tab=repositories">
@@ -44,7 +44,7 @@ const Work = () => {
             variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="flex-1 flex flex-col gap-y-10 mb-10"
           >
             {/*image */}
@@ -54,8 +54,8 @@ const Work = () => {
               {/*img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500"
-                src={Img2}
-                alt="image2"
+                src={Img1}
+                alt="image1"
               />
               {/*pretitle */}
               <div className="absolute -bottom-full left-6 group-hover:bottom-12 transition-all duration-500 z-50">
@@ -83,8 +83,8 @@ const Work = () => {
               {/*img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500"
-                src={Img3}
-                alt="image3"
+                src={Img2}
+                alt="image2"
               />
               {/*pretitle */}
               <div className="absolute -bottom-full left-6 group-hover:bottom-12 transition-all duration-500 z-50">
@@ -105,6 +105,43 @@ const Work = () => {
                 </a>
               </div>
             </div>
+            {/*image */}
+            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+              {/*overlay */}
+              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              {/*img */}
+              <img
+                className="group-hover:scale-125 transition-all duration-500"
+                src={Img3}
+                alt="image3"
+              />
+              {/*pretitle */}
+              <div className="absolute -bottom-full left-6 group-hover:bottom-12 transition-all duration-500 z-50">
+                <a
+                  href="https://github.com/engijlr/todolist-react"
+                  className="text-white"
+                >
+                  See code
+                </a>
+              </div>
+              {/*title */}
+              <div className="absolute -bottom-full left-6 group-hover:bottom-4 transition-all duration-700 z-50">
+                <a
+                  href="https://cheerful-cucurucho-45fd9b.netlify.app"
+                  className="text-xl text-gradient"
+                >
+                  Todo List
+                </a>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.3 }}
+            className="flex-1 flex flex-col gap-y-10"
+          >
             {/*image */}
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               {/*overlay */}
@@ -134,14 +171,6 @@ const Work = () => {
                 </a>
               </div>
             </div>
-          </motion.div>
-          <motion.div
-            variants={fadeIn("left", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-10"
-          >
             {/*image */}
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               {/*overlay */}
@@ -155,7 +184,7 @@ const Work = () => {
               {/*pretitle */}
               <div className="absolute -bottom-full left-6 group-hover:bottom-12 transition-all duration-500 z-50">
                 <a
-                  href="https://github.com/engijlr/todolist-react"
+                  href="https://github.com/engijlr/movie-app"
                   className="text-white"
                 >
                   See code
@@ -164,10 +193,10 @@ const Work = () => {
               {/*title */}
               <div className="absolute -bottom-full left-6 group-hover:bottom-4 transition-all duration-700 z-50">
                 <a
-                  href="https://cheerful-cucurucho-45fd9b.netlify.app"
+                  href="https://engijlr.github.io/movie-app/"
                   className="text-xl text-gradient"
                 >
-                  Todo List
+                  Movie App
                 </a>
               </div>
             </div>
@@ -197,35 +226,6 @@ const Work = () => {
                   className="text-xl text-gradient"
                 >
                   Calories Tracker
-                </a>
-              </div>
-            </div>
-            {/*image */}
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              {/*overlay */}
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-              {/*img */}
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Img7}
-                alt="image7"
-              />
-              {/*pretitle */}
-              <div className="absolute -bottom-full left-6 group-hover:bottom-12 transition-all duration-500 z-50">
-                <a
-                  href="https://github.com/engijlr/movie-app"
-                  className="text-white"
-                >
-                  See code
-                </a>
-              </div>
-              {/*title */}
-              <div className="absolute -bottom-full left-6 group-hover:bottom-4 transition-all duration-700 z-50">
-                <a
-                  href="https://engijlr.github.io/movie-app/"
-                  className="text-xl text-gradient"
-                >
-                  Movie App
                 </a>
               </div>
             </div>

@@ -46,7 +46,7 @@ const Contact = () => {
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="flex-1 flex justify-start items-center"
           >
             <div>
@@ -63,7 +63,7 @@ const Contact = () => {
             variants={fadeIn("left", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             ref={form}
             onSubmit={sendEmail}
             className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"

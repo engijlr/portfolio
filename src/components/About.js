@@ -45,7 +45,7 @@ const About = () => {
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
             <h2 className="h2 text-accent mb-6">What I Do.</h2>
@@ -68,7 +68,7 @@ const About = () => {
             variants={fadeIn("left", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="flex-1"
           >
             {/*services list */}
@@ -77,7 +77,7 @@ const About = () => {
                 const { name, description, icons } = service;
                 return (
                   <div
-                    className="border-b border-white/20 h-[146px] mb-[38px] flex"
+                    className="border-b border-white/20 h-[160px] mb-[38px] flex"
                     key={index}
                   >
                     <div className="max-w-[476px]">

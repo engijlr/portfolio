@@ -21,7 +21,7 @@ const Banner = () => {
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="text-[55px] font-bold leading-[0.8] lg:text-[100px]"
             >
               ENGIBER <span>LOZADA</span>
@@ -30,8 +30,8 @@ const Banner = () => {
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="mb-4 text-[36px] lg:text-[45px] font-secondary font-semibold uppercase leading-[1]"
+              viewport={{ once: true, amount: 0.7 }}
+              className="mb-4 text-[36px] lg:text-[45px] font-secondary font-semibold uppercase leading-[1] min-h-[80px] lg:min-h-0"
             >
               <span className="text-white mr-4">I am a</span>
               <TypeAnimation
@@ -51,21 +51,22 @@ const Banner = () => {
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Who love the challenge of taking complex problems and breaking
-              them down into smaller, more manageable pieces that can be solve
-              with code. I also love the freedom that programming offers in
-              terms of creativity. I am a good team player and fast learner who
-              will try always to find the most elegant and efficient solution
-              for any problem.
+              I am a front-end developer who loves building visually stunning
+              and user-friendly apps based on the fundamentals of today's
+              front-end development, such as code reusability, semantic markup
+              and accessibility.
+              <br /> I am currently looking for an opportunity to continue
+              growing, collaborating, and learning from more experienced
+              developers, designers, data analysts, and/or product managers.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-6 mx-auto lg:mx-0"
             >
               <Link
@@ -82,7 +83,7 @@ const Banner = () => {
               variants={fadeIn("up", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
               <a href="https://github.com/engijlr">
@@ -98,6 +99,7 @@ const Banner = () => {
             variants={fadeIn("down", 0.5)}
             initial="hidden"
             whileInView={"show"}
+            viewport={{ once: true, amount: 0.7 }}
             className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
           >
             <img src={Image} alt="Banner" />
