@@ -54,10 +54,9 @@ const Banner = () => {
               viewport={{ once: true, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              I am a front-end developer who loves building visually stunning
-              and user-friendly apps based on the fundamentals of today's
-              front-end development, such as code reusability, semantic markup
-              and accessibility.
+              Who loves building visually stunning and user-friendly apps based
+              on the fundamentals of today's front-end development, such as code
+              reusability, semantic markup and accessibility.
               <br /> I am currently looking for an opportunity to continue
               growing, collaborating, and learning from more experienced
               developers, designers, data analysts, and/or product managers.
