@@ -69,10 +69,10 @@ const Work = () => {
               {/*title */}
               <div className="absolute -bottom-full left-6 group-hover:bottom-4 transition-all duration-700 z-50">
                 <a
-                  href="https://el-spotify-clone.netlify.app"
+                  href="https://lyriks-music-dev.netlify.app"
                   className="text-xl text-gradient"
                 >
-                  Spotify Clone
+                  Lyriks
                 </a>
               </div>
             </div>
@@ -98,10 +98,10 @@ const Work = () => {
               {/*title */}
               <div className="absolute -bottom-full left-6 group-hover:bottom-4 transition-all duration-700 z-50">
                 <a
-                  href="https://radiant-daifuku-4271a6.netlify.app"
+                  href="https://sofatv.netlify.app"
                   className="text-xl text-gradient"
                 >
-                  Youtube Clone
+                  SofaTV
                 </a>
               </div>
             </div>
