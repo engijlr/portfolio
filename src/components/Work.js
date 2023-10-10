@@ -3,7 +3,7 @@ import { fadeIn } from "../variants";
 
 import Img1 from "../assets/spotify-clone.png";
 import Img2 from "../assets/youtube.png";
-import Img3 from "../assets/todo-list.png";
+import Img3 from "../assets/godaapp.png";
 import Img4 from "../assets/yelpcamp.png";
 import Img5 from "../assets/movie-app.png";
 import Img6 from "../assets/calories-tracker.png";
@@ -118,7 +118,7 @@ const Work = () => {
               {/*pretitle */}
               <div className="absolute -bottom-full left-6 group-hover:bottom-12 transition-all duration-500 z-50">
                 <a
-                  href="https://github.com/engijlr/todolist-react"
+                  href="https://github.com/engijlr/GodaesilRide"
                   className="text-white"
                 >
                   See code
@@ -127,10 +127,10 @@ const Work = () => {
               {/*title */}
               <div className="absolute -bottom-full left-6 group-hover:bottom-4 transition-all duration-700 z-50">
                 <a
-                  href="https://cheerful-cucurucho-45fd9b.netlify.app"
+                  href="https://godaesil-ride-chi.vercel.app/"
                   className="text-xl text-gradient"
                 >
-                  Todo List
+                  Godaesil Ride
                 </a>
               </div>
             </div>
