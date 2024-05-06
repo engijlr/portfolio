@@ -3,9 +3,9 @@ import { fadeIn } from "../variants";
 
 import Img1 from "../assets/spotify-clone.png";
 import Img2 from "../assets/youtube.png";
-import Img3 from "../assets/godaapp.png";
+import Img3 from "../assets/swipe-app.png";
 import Img4 from "../assets/yelpcamp.png";
-import Img5 from "../assets/movie-app.png";
+import Img5 from "../assets/hilink-page.png";
 import Img6 from "../assets/summarizer.png";
 
 const Work = () => {
@@ -118,7 +118,7 @@ const Work = () => {
               {/*pretitle */}
               <div className="absolute -bottom-full left-6 group-hover:bottom-12 transition-all duration-500 z-50">
                 <a
-                  href="https://github.com/engijlr/GodaesilRide"
+                  href="https://github.com/engijlr/swipe-app"
                   className="text-white"
                 >
                   See code
@@ -127,10 +127,10 @@ const Work = () => {
               {/*title */}
               <div className="absolute -bottom-full left-6 group-hover:bottom-4 transition-all duration-700 z-50">
                 <a
-                  href="https://godaesil-ride-chi.vercel.app/"
+                  href="https://poetic-torrone-57da5d.netlify.app/"
                   className="text-xl text-gradient"
                 >
-                  Godaesil Ride
+                  Swipe App
                 </a>
               </div>
             </div>
@@ -184,7 +184,7 @@ const Work = () => {
               {/*pretitle */}
               <div className="absolute -bottom-full left-6 group-hover:bottom-12 transition-all duration-500 z-50">
                 <a
-                  href="https://github.com/engijlr/movie-app"
+                  href="https://github.com/engijlr/hilink-jsm"
                   className="text-white"
                 >
                   See code
@@ -193,10 +193,10 @@ const Work = () => {
               {/*title */}
               <div className="absolute -bottom-full left-6 group-hover:bottom-4 transition-all duration-700 z-50">
                 <a
-                  href="https://engijlr.github.io/movie-app/"
+                  href="https://hilink-js.netlify.app/"
                   className="text-xl text-gradient"
                 >
-                  Movie App
+                  HiLink
                 </a>
               </div>
             </div>
